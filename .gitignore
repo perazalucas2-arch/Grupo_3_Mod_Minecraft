@@ -2,6 +2,10 @@
 .gradle/
 out/
 
+# Wrapper
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
 # IDE
 .idea/
 *.iml
