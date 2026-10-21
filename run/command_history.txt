@@ -3,3 +3,11 @@
 /gamemode survival
 /game
 /gamemode survival
+/gamemode
+/gamemode creative
+/gamemode survival
+/summon minecraft:wither
+/kill @e
+/gamemode creative
+/time set day
+/summon ayuwoki

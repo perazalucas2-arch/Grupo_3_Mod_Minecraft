@@ -2,7 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "OEO"
+    " A ",
+    "OEO",
+    " A "
   ],
   "key": {
     "O": {
@@ -10,6 +12,9 @@
     },
     "E": {
       "item": "minecraft:ender_eye"
+    },
+    "A": {
+      "item": "minecraft:amethyst_cluster"
     }
   },
   "result": {
