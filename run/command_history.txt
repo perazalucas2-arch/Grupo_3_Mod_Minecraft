@@ -1,3 +1,5 @@
 /give @s minecraft:obsidian 2
 /give @s minecraft:ender_eye
 /gamemode survival
+/game
+/gamemode survival
