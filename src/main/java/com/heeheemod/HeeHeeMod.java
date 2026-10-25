@@ -1,5 +1,6 @@
 package com.heeheemod;
 
+import com.heeheemod.block.ModBlocks;
 import com.heeheemod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -21,6 +22,7 @@ public class HeeHeeMod {
         ModEntities.register(modEventBus);
         ModSounds.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         LOGGER.info("HeeHeeMod cargado correctamente");
     }
@@ -28,6 +30,9 @@ public class HeeHeeMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.OJO_AYUWOKI);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ALTAR_ITEM);
         }
     }
 }

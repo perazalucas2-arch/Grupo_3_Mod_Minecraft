@@ -36,7 +36,7 @@ public class AyuwokiEntity extends Monster {
     //  20 ticks = 1 segundo
     // =====================================================================
     /** Dano por golpe (12 = 6 corazones). */
-    public static final double ATTACK_DAMAGE = 12.0D;
+    public static final double ATTACK_DAMAGE = 19.0D;
     /** Duracion del efecto Oscuridad al golpear (600 ticks = 30 s). */
     public static final int DARKNESS_TICKS = 600;
 
@@ -45,7 +45,6 @@ public class AyuwokiEntity extends Monster {
     private static final int TELEPORT_COOLDOWN_RANDOM = 50;
     /** Distancia al objetivo (al cuadrado) a partir de la cual se teletransporta: 7 bloques. */
     private static final double TELEPORT_MIN_DISTANCE_SQR = 49.0D;
-
     /** Desaparicion con jumpscare: espera entre una y otra (20 s a 40 s). */
     private static final int VANISH_COOLDOWN_MIN = 400;
     private static final int VANISH_COOLDOWN_RANDOM = 400;
@@ -63,7 +62,7 @@ public class AyuwokiEntity extends Monster {
     private static final int PEEK_TOTAL_TICKS = 80;
 
     /** Id del evento de entidad que dispara el jumpscare en el cliente. */
-    public static final byte EVENT_JUMPSCARE = 100;
+    public static final byte EVENT_JUMPSCARE = 80;
 
     private int teleportCooldown = 60;
     private int vanishCooldown = 200;
@@ -76,7 +75,7 @@ public class AyuwokiEntity extends Monster {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 60.0D)
+                .add(Attributes.MAX_HEALTH, 250.0D)
                 // 0.32 ~ 6.2 bloques/s: un poco mas rapido que un jugador corriendo (5.6).
                 .add(Attributes.MOVEMENT_SPEED, 0.32D)
                 .add(Attributes.ATTACK_DAMAGE, ATTACK_DAMAGE)
@@ -137,7 +136,8 @@ public class AyuwokiEntity extends Monster {
     public boolean doHurtTarget(Entity target) {
         boolean hit = super.doHurtTarget(target);
         if (hit && target instanceof LivingEntity living) {
-            living.addEffect(new MobEffectInstance(MobEffects.DARKNESS, DARKNESS_TICKS, 0));
+            living.addEffect(new MobEffectInstance(MobEffects.DARKNESS, DARKNESS_TICKS, 0), this);
+            living.addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 1), this);
         }
         return hit;
     }
