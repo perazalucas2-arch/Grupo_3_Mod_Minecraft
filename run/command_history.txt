@@ -1,13 +1,3 @@
-/time set day
-/summon ayuwoki
-/summon heeheemod:ayuwoki
-/gamemode survival
-/gamemode creative
-/gamemode survival
-/gamemode creative
-/summon heeheemod:ayuwoki
-/gamemode survival
-/gamemode creative
 /gamemode survival
 /locate biome minecraft:forest
 /tp @s -10 75 -705
@@ -48,3 +38,13 @@
 /gamemode creative
 /gamemode survival
 /gamemode creative
+/time set day
+/gamemode survival
+/gamemode creative
+/summon heeheemod:ayuwoki
+/time set night
+/gamemode survival
+/gamemode creative
+/weather clear
+/summon heeheemod:ayuwoki
+/time set day
