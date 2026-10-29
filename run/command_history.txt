@@ -1,15 +1,4 @@
 /gamemode creative
-/gamemode survival
-/summon heeheemod:ayuwoki
-/gamemode creative
-/gamemode survival
-/summon heeheemod:ayuwoki
-/gamemode survival
-/summon heeheemod:ayuwoki
-/summon heeheemod:ayuwoki}
-/summon heeheemod:ayuwoki
-/gamemode survival
-/gamemode creative
 /summon heeheemod:ayuwoki
 /gamemode survival
 /summon heeheemod:ayuwoki
@@ -48,3 +37,14 @@
 /kill @e
 /gamemode survival
 /gamemode creative
+/debug
+/give @s minecraft:structure_block
+/place template
+/place template heeheemod:templo
+/locate structure heeheemod:templo
+/tp @s -416 ~ 384
+/locate structure heeheemod:templo
+/place template heeheemod:templo
+/locate structure heeheemod:templo
+/tp @s 208 ~ 304
+/place template heeheemod:templo
