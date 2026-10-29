@@ -1,11 +1,3 @@
-/gamemode creative
-/gamemode survival
-/summon heeheemod:ayuwoki
-/gamemode creative
-/gamemode survival
-/summon heeheemod:ayuwoki
-/gamemode survival
-/summon heeheemod:ayuwoki
 /summon heeheemod:ayuwoki}
 /summon heeheemod:ayuwoki
 /gamemode survival
@@ -46,5 +38,13 @@
 /gamemode survival
 /gamemode creative
 /kill @e
+/gamemode survival
+/gamemode creative
+/give dev heeheemod:altar
+/gamemode survival
+/give dev heeheemod:altar
+/give Dev heeheemod:ojo_ayuwoki
+/give dev minecraft:nether_gold_ore
+/gamemode creative
 /gamemode survival
 /gamemode creative

@@ -219,33 +219,34 @@ public class AyuwokiEntity extends Monster {
         return false;
     }
 
-    /**
-     * Se coloca DELANTE del objetivo (dentro de su campo de vision), a [minDist, maxDist] bloques.
-     * Si no hay sitio delante, prueba en cualquier direccion.
-     */
-    boolean teleportInFront(LivingEntity target, double minDist, double maxDist) {
-        Vec3 look = target.getLookAngle();
-        Vec3 front = new Vec3(look.x, 0, look.z);
-        front = front.lengthSqr() < 1.0E-4D ? new Vec3(1, 0, 0) : front.normalize();
 
-        for (int i = 0; i < 20; i++) {
-            double dist = minDist + this.random.nextDouble() * (maxDist - minDist);
-            double angle = i < 14
-                    ? (this.random.nextDouble() - 0.5D) * Math.toRadians(40)
-                    : this.random.nextDouble() * Math.PI * 2;
-            Vec3 dir = front.yRot((float) angle);
+     boolean teleportInFront(LivingEntity target, double minDist, double maxDist) {
+     return teleportInFront(target, minDist, maxDist, false);
+     }
 
-            double x = target.getX() + dir.x * dist;
-            double y = target.getY() + 1.0D;
-            double z = target.getZ() + dir.z * dist;
+     boolean teleportInFront(LivingEntity target, double minDist, double maxDist, boolean particles) {
+     Vec3 look = target.getLookAngle();
+     Vec3 front = new Vec3(look.x, 0, look.z);
+     front = front.lengthSqr() < 1.0E-4D ? new Vec3(1, 0, 0) : front.normalize();
 
-            if (this.randomTeleport(x, y, z, false)) {
-                this.getLookControl().setLookAt(target, 360.0F, 360.0F);
-                return true;
-            }
-        }
-        return false;
-    }
+     for (int i = 0; i < 20; i++) {
+     double dist = minDist + this.random.nextDouble() * (maxDist - minDist);
+     double angle = i < 14
+     ? (this.random.nextDouble() - 0.5D) * Math.toRadians(40)
+     : this.random.nextDouble() * Math.PI * 2;
+     Vec3 dir = front.yRot((float) angle);
+
+     double x = target.getX() + dir.x * dist;
+     double y = target.getY() + 1.0D;
+     double z = target.getZ() + dir.z * dist;
+
+     if (this.randomTeleport(x, y, z, particles)) {
+     this.getLookControl().setLookAt(target, 360.0F, 360.0F);
+     return true;
+     }
+     }
+     return false;
+     }
 
     private void smokePuff() {
         if (this.level() instanceof ServerLevel server) {
@@ -299,7 +300,7 @@ public class AyuwokiEntity extends Monster {
             Level level = mob.level();
             double oldX = mob.getX(), oldY = mob.getY(), oldZ = mob.getZ();
 
-            if (mob.teleportAround(target, 4.0D, 8.0D, true, true)) {
+            if (mob.teleportInFront(target, 3.0D, 5.0D, true)) {
                 level.playSound(null, oldX, oldY, oldZ, SoundEvents.ENDERMAN_TELEPORT, SoundSource.HOSTILE, 1.0F, 0.6F);
                 level.playSound(null, mob.getX(), mob.getY(), mob.getZ(), SoundEvents.ENDERMAN_TELEPORT, SoundSource.HOSTILE, 1.0F, 0.6F);
             }
