@@ -1,7 +1,3 @@
-/gamemode survival
-/gamemode creative
-/summon heeheemod:ayuwoki
-/gamemode survival
 /gamemode creative
 /gamemode survival
 /summon heeheemod:ayuwoki
@@ -48,3 +44,7 @@
 /kill @e
 /time set day
 /gamemode survival
+/gamemode creative
+/kill @e
+/gamemode survival
+/gamemode creative
