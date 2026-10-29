@@ -18,7 +18,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.ITEMS, HeeHeeMod.MOD_ID);
 
     public static final RegistryObject<Block> ALTAR = BLOCKS.register("altar",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new AltarBlock(BlockBehaviour.Properties.of()
                     .strength(3.5f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));

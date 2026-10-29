@@ -1,1 +1,3 @@
-{ "parent": "heeheemod:block/altar" }
+{
+  "parent": "heeheemod:block/altar"
+}

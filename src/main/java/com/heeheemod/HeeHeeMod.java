@@ -24,6 +24,7 @@ public class HeeHeeMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         modEventBus.addListener(this::addCreative);
+
         LOGGER.info("HeeHeeMod cargado correctamente");
     }
 
