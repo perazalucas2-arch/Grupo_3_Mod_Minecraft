@@ -1,15 +1,3 @@
-/summon heeheemod:ayuwoki}
-/summon heeheemod:ayuwoki
-/gamemode survival
-/gamemode creative
-/summon heeheemod:ayuwoki
-/gamemode survival
-/summon heeheemod:ayuwoki
-/gamemode survival
-/summon heeheemod:ayuwoki
-/gamemode survival
-/gamemode
-/gamemode creative
 /gamemode survival
 /gamemode creative
 /gamemode survival
@@ -48,3 +36,15 @@
 /gamemode creative
 /gamemode survival
 /gamemode creative
+/locate structure heeheemod:templo
+/tp @s -304 ~ -432
+/give Dev heeheemod:altar
+/locate structure heeheemod:templo
+/tp @s -48 ~ 464
+/locate structure heeheemod:templo
+/gamemode survival
+/gamemode creative
+/locate biome #c:is_birch_forest
+/tp @s 103 91 504
+/summon heeheemod:ayuwoki
+/gamemode survival
