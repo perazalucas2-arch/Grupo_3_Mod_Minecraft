@@ -1,15 +1,3 @@
-/summon heeheemod:ayuwoki}
-/summon heeheemod:ayuwoki
-/gamemode survival
-/gamemode creative
-/summon heeheemod:ayuwoki
-/gamemode survival
-/summon heeheemod:ayuwoki
-/gamemode survival
-/summon heeheemod:ayuwoki
-/gamemode survival
-/gamemode
-/gamemode creative
 /gamemode survival
 /gamemode creative
 /gamemode survival
@@ -48,3 +36,15 @@
 /gamemode creative
 /gamemode survival
 /gamemode creative
+/locate structure heeheemod:templo
+/tp @s -1008 ~ 560ç
+/tp @s -1008 ~ 560
+/locate structure heeheemod:templo
+/tp @s -1008 ~ 5006
+/locate structure heeheemod:templo
+/tp @s -3024 ~ 5808
+/tp @s 7000 ~ 5808
+/locate structure heeheemod:templo
+/tp @s 5488 ~ 4208
+/locate structure heeheemod:templo
+/tp @s 5488 ~ 4208
