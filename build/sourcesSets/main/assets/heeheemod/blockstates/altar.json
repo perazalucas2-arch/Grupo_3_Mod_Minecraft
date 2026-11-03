@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "has_eye=false": { "model": "heeheemod:block/altar" },
-    "has_eye=true":  { "model": "heeheemod:block/altar_eye" }
-  }
-}
