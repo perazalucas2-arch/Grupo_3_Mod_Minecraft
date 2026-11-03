@@ -14,6 +14,13 @@ out/
 .classpath
 .project
 bin/
+build/
+run/
+
+
+
+
+
 
 # OS
 .DS_Store

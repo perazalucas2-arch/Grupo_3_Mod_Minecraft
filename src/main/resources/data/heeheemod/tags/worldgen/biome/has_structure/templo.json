@@ -1,5 +1,10 @@
 {
   "values": [
-    "#minecraft:is_overworld"
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:desert",
+    "minecraft:savanna",
+    "minecraft:snowy_plains",
+    "minecraft:taiga"
   ]
 }
