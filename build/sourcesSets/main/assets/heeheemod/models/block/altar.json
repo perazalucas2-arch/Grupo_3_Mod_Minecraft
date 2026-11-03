@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "heeheemod:block/altar_base",
+    "side": "heeheemod:block/altar_lados",
+    "top": "heeheemod:block/arriba_sin_ojo"
+  }
+}
+

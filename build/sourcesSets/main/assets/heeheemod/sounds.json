@@ -1,0 +1,21 @@
+{
+  "hee_hee": {
+    "subtitle": "subtitles.heeheemod.hee_hee",
+    "sounds": [
+      { "name": "heeheemod:hee_hee", "attenuation_distance": 48 }
+    ]
+  },
+  "jumpscare": {
+    "sounds": [
+      "heeheemod:jumpscare"
+    ]
+  },
+  "te_veo": {
+    "sounds": ["heeheemod:te_veo"]
+  },
+  "chase_music": {
+    "sounds": [
+      { "name": "heeheemod:chase_music", "stream": true }
+    ]
+  }
+}

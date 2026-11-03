@@ -1,0 +1,50 @@
+/gamemode survival
+/gamemode creative
+/gamemode survival
+/summon heeheemod:ayuwoki
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/time set day
+/gamemode survival
+/gamemode creative
+/summon heeheemod:ayuwoki
+/time set night
+/gamemode survival
+/gamemode creative
+/weather clear
+/summon heeheemod:ayuwoki
+/time set day
+/gamemode survival
+/gamemode creative
+/summon heeheemod:ayuwoki
+/summon heeheemod:ayuwokiç
+/summon heeheemod:ayuwoki
+/kill @a
+/kill @e
+/time set day
+/gamemode survival
+/gamemode creative
+/kill @e
+/gamemode survival
+/gamemode creative
+/give dev heeheemod:altar
+/gamemode survival
+/give dev heeheemod:altar
+/give Dev heeheemod:ojo_ayuwoki
+/give dev minecraft:nether_gold_ore
+/gamemode creative
+/gamemode survival
+/gamemode creative
+/locate structure heeheemod:templo
+/tp @s -304 ~ -432
+/give Dev heeheemod:altar
+/locate structure heeheemod:templo
+/tp @s -48 ~ 464
+/locate structure heeheemod:templo
+/gamemode survival
+/gamemode creative
+/locate biome #c:is_birch_forest
+/tp @s 103 91 504
+/summon heeheemod:ayuwoki
+/gamemode survival
